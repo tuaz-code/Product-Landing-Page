@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  color: #01626d;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5rem;
+}
+
+.container {
+  background-color: #f0f1f2;
+}
+
+.first-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.first-container {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: #f0f1f2;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  font-family: 'Alex Brush', cursive;
+  font-weight: 500;
+}
+
+#first-heading {
+  font-weight: 200;
+  margin: auto;
+  color: #dc8325;
+}
+
+.content-info h1 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
+  font-family: 'Alex Brush', cursive;
+}
+
+.content-info button {
+  margin-top: 1.5rem;
+  width: 45%;
+  padding: 0.5rem 0rem;
+  background-color: #38D39F;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid #38D39F;
+  border-radius: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.modify-card {
+  border: 2px solid #38D39F;
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-between;
+  background-color: #e4d4ba;
+}
+
+.modify-card h2 {
+  background-color: #38D39F;
+  color: white;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.modify-card button {
+  padding: 0.5rem;
+  width: 65%;
+  align-self: center;
+  margin-bottom: 2rem;
+  background-color: #38D39F;
+  color: white;
+  border-radius: inherit;
+  border: 1px solid #38D39F;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.modify-card p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1.6rem 0.5rem;
+}
+
+i {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #38D39F;
+}
+
+label {
+  color: white;
+}
+
+input {
+  padding: 0.4rem 0;
+  border: 1px solid #38D39F;
+  border-radius: 1.4rem;
+}
+
+input[type='email'] {
+  margin-bottom: 1.5rem;
+}
+
+input[type='submit'] {
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+  padding-left: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:768px) {
+
+  .illustration {
+    display: none;
+  }
+
+  #video {
+    display: none;
+  }
+
+  .first-page {
+    background: url(https://previews.dropbox.com/p/thumb/AA1IFITV0ZgCjoaXLoVgdfu1CwQ4xCVCYUC_3hFP2jT2voGOGPXbLWmLXg8RRqO8xiSNmvI1gByn1q6SL-kuqmJx5hxDiZuFXhavnHp1dWW368pXuOf8JNmHH_OgP-TrVDrCzBTMi9dIiUEeeueZpTheViED9PMCwpvUOLGGf9PfoXCnmU_OAxYKL3hSXwJGntiiiglrJlRHZh-hqPSE_Ek_x3MyHUj5dQJ0tZwnZoj_Cf0RnaTPIY80KKqYmh7FvSqiFAmy04eYCoRvAxdI8NhM9W1po-zVndxZYCEr8yV8ARohJORwmD4nzWGoSIjaXiXWd7_a_tvcgSeftOWZPtA9uKEFdmLmVoz2a2SfpRg7-g/p.png?fv_content=true&size_mode=5);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  .first-container,
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  header {
+    min-width: 100vw;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .logo {
+    margin: 1rem auto;
+    width: 70%;
+  }
+
+  .styling {
+    font-size: 3rem;
+  }
+
+  img {
+    width: 4.5rem;
+    margin-right: 1rem;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0.7rem auto;
+    background-color: #38D39F;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  #nav-bar {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  nav ul {
+    text-align: center;
+
+  }
+
+  .content-info {
+    text-align: center;
+    margin: 18rem auto;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+
+  .content-info h1 {
+    font-size: 2.8rem;
+  }
+
+  .only-card-container {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .contact-us {
+    max-width: 90%;
+    margin: 1rem auto;
+    background-color: #38d39f;
+    padding: 1rem 0.5rem;
+    padding-top: 0.1rem;
+    border-radius: 0.5rem;
+  }
+
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width:768px) {
+  .first-page {
+    background: url(https://previews.dropbox.com/p/thumb/AA1iWE9PpMgRWQakIPh4yoOiE-jaoRTHF8e13L4puhH_t_ZdwWYHxg4xyBYEtK1AP1m-tpMLCDtw2gFmGYAF3BKZezmuk_yVJP_CkU0N60DbW9PmNHWTHATmf-qHHjUNwF4YnOqtZL5YDShDZRBWudGTkEtFr9PykPd1FZPD27oj3NkZU2puUXavLlWe3UcLbgLsiEzU5X3iweuvV2z30gFiUkWbFsobhLmCFtJtdBvIy9N1hfSGv5aYRe7jlj-gL6DdBLZrfAMO7JZW1MeHy-kCH_uKsGgIW-tcVSLapn_nzKy9vTUdi4PSnc2ZiKyN3f0y0Zi5zw_KMAwvidmk51S-6NxTF8WtzLxwo7hHQ2IWCg/p.png?fv_content=true&size_mode=5);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    min-width: 100%;
+  }
+
+  .logo {
+    margin: 1rem 2rem;
+  }
+
+  .styling {
+    font-size: 3.5rem;
+  }
+
+  img {
+    width: 4rem;
+    margin-right: 1rem;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0.7rem 1rem;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #38D39F;
+  }
+
+  nav ul {
+    text-align: center;
+    display: flex;
+  }
+
+  .illustration img {
+    width: 80%;
+    margin: 6rem 0rem 0rem 0rem;
+  }
+
+  #main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0rem 0rem 2rem;
+  }
+
+  .content-info {
+    margin: 7rem 0rem 0rem 0rem;
+    line-height: 1.4;
+  }
+
+  .content-info h1 {
+    font-size: 3rem;
+  }
+
+  .content-info p {
+    font-size: 1rem;
+  }
+
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-us-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+
+  #video {
+    width: 46%;
+  }
+
+  .contact-us {
+    background-color: #38d39f;
+    padding: 1rem 0.5rem;
+    padding-top: 0.1rem;
+    border-radius: 0.5rem;
+    width: 46%;
+  }
+
+}
